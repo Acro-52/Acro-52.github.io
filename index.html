@@ -1,246 +1,169 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
-    <title>Porfolio</title>
-    <link rel="stylesheet" href="css/principal.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-    <!-- https://material.io/resources/icons/?style=baseline -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="slider/themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="slider/css/nivo-slider.css" type="text/css" media="screen" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aitor Javier Pérez Muro · Técnico informático y desarrollador web</title>
+  <meta name="description" content="Portfolio de Aitor Javier Pérez Muro: técnico informático (sistemas, redes y soporte) y desarrollador web en Viladecans, Barcelona.">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!--Header relleno-->
-    <div id="header" style="visibility: hidden; position: relative;">
-        <!--Header web-->
-        <div id="header_segunda_fila" class="desaparecer_movil">
-            <div id="Logo">
-                <a href="#Inicio"><img src="images/Logo.png" /></a>
-            </div>
-            <div id="Componentes_header">
-                <div>
-                    Sobre mi
-                </div>
-                <div>
-                    Paginas comerciales
-                </div>
-                <div>
-                    Projectos propios
-                </div>
-                <div>
-                    Contacto
-                </div>
-            </div>
-        </div>
-        <!--Header movil-->
-        <div id="header_segunda_fila" class="desaparecer_web">
-            <div id="Logo">
-                <a href="#Inicio"><img src="images/Logo.png" /></a>
-            </div>
-        </div>
-    </div>
-    <!--Header Bueno-->
-    <div id="header">
-        <!--Header web-->
-        <div id="header_segunda_fila" class="desaparecer_movil">
-            <div id="Logo">
-                <a href="#Inicio"><img src="images/Logo.png" /></a>
-            </div>
-            <div id="Componentes_header">
-                <div onclick="scrollToAnchor('Inicio')">
-                    <a href="#Inicio">Sobre mi</a>
-                </div>
-                <div onclick="scrollToAnchor('Pagina_online')">
-                    <a href="#Pagina_online">Paginas comerciales</a>
-                </div>
-                <div onclick="scrollToAnchor('Pagina_propia')">
-                    <a href="#Pagina_propia">Projectos propios</a>
-                </div>
-                <div onclick="scrollToAnchor('Contacto')">
-                    <a href="#Contacto">Contacto</a>
-                </div>
-            </div>
-        </div>
-        <!--Header movil-->
-        <div id="header_segunda_fila" class="desaparecer_web">
-            <div id="Logo">
-                <a href="#Inicio"><img src="images/Logo.png" /></a>
-            </div>
-            <div id="Burger">
-                <img src="images/menu_burger.png">
-            </div>
-        </div>
+  <header class="top">
+    <a class="brand" href="#inicio">Acro-52</a>
+    <nav aria-label="Principal">
+      <a href="#hago">Qué hago</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-    </div>
-    <!--Menu movil-->
-    <div id="Componentes_header_movil" class="">
-        <div class="relleno">-</div>
-        <div onclick="scrollToAnchor('Inicio')">
-            <a href="#Inicio">Sobre mi</a>
-        </div>
-        <div onclick="scrollToAnchor('Pagina_online')">
-            <a href="#Pagina_online">Paginas comerciales</a>
-        </div>
-        <div onclick="scrollToAnchor('Pagina_propia')">
-            <a href="#Pagina_propia">Projectos propios</a>
-        </div>
-        <div onclick="scrollToAnchor('Contacto')">
-            <a href="#Contacto">Contacto</a>
-        </div>
-    </div>
-    <!--Sombre mi-->
-    <div id="Inicio" class="Contenedor">
-        <!--Inicio-->
-        <div class="Inicio_1">
-            <h1 class="ml10">
-                <span class="text-wrapper">
-                    <span class="letters">Aitor Javier Perez Muro</span>
-                </span>
-            </h1>
-            <h2 class="SubTitulo">
-                Programador web y de videojuegos
-            </h2>
-        </div>
-        <div class="Inicio_2">
-            <div class="informacion_contenedores">
-                <div id="Inicio_informacion">
-                    <h3>Sobre mi</h3>
-                    <span style="padding: 10px;">
-                    Soy desarrollador web junior con interés en el Backend como en el Frontend, estuve un año desarrollando Videojuegos, pero ahora quiero afrontar nuevos retos.
-                    </span>
-                    <div id="redes">
-                        <a href="https://www.linkedin.com/in/aitor-javier-perez-muro-954a74a5/" target="_blank"><img src="images/In.png"></a>
-                        <a href="https://github.com/AcroSenpai" target="_blank"><img src="images/git.png"></a>
-                    </div>
+  <main id="inicio">
+    <section class="hero">
+      <div>
+        <h1>Aitor Javier<br>Pérez Muro</h1>
+        <p class="role">Técnico informático y desarrollador web. Monto y arreglo equipos, redes y también las aplicaciones que corren encima.</p>
+        <p class="actions">
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+          <a class="btn ghost" href="Documentos/AitorJavierPerezMuro_Curriculum.pdf" target="_blank" rel="noopener">Descargar CV</a>
+        </p>
+      </div>
+<pre class="code" aria-label="Resumen en formato de código"><code><span class="l"><i>const</i> aitor = {</span>
+<span class="l">  base: <b>"Viladecans, Barcelona"</b>,</span>
+<span class="l">  sistemas: [<b>"Windows"</b>, <b>"macOS"</b>, <b>"Linux"</b>, <b>"Redes LAN/WLAN"</b>],</span>
+<span class="l">  web: [<b>"HTML5"</b>, <b>"CSS3"</b>, <b>"JavaScript"</b>, <b>"React"</b>,</span>
+<span class="l">        <b>"PHP"</b>, <b>"Python"</b>, <b>"C#"</b>, <b>"Unity"</b>],</span>
+<span class="l">  datos: [<b>"MySQL"</b>, <b>"PostgreSQL"</b>, <b>"SQLite"</b>],</span>
+<span class="l">  idiomas: [<b>"es"</b>, <b>"ca"</b>, <b>"en"</b>, <b>"ja"</b>],</span>
+<span class="l">};</span></code></pre>
+    </section>
 
-                    <div>
-                        <a href="Documentos/AitorJavierPerezMuro_Curriculum.pdf" target="_blank" class="boton_CV"><button type="button" >CV</button></a>
-                    </div>
-                    <div class="separador"></div>
-                </div>
-                <div>
-                    <h3 style="opacity: 0;"> .</h3>
-                    <div class="cont_slider">
-                        <div id="slider" class="nivoSlider">
-                            <img src="slider/images/1.png" data-thumb="slider/images/1.png" alt="" />
-                            <img src="slider/images/2.png" data-thumb="slider/images/2.png" alt="" />
-                            <img src="slider/images/3.png" data-thumb="slider/images/3.png" alt="" />
-                        </div>
-                    </div>
+    <section id="hago" class="block">
+      <h2>Qué puedo hacer</h2>
+      <p class="lead">Tengo dos perfiles que se complementan: resuelvo problemas de equipos y redes sobre el terreno, y desarrollo aplicaciones web con base de datos.</p>
+      <div class="duo">
+        <article class="area sis">
+          <h3>Sistemas y soporte</h3>
+          <ul>
+            <li>Montaje, diagnóstico y mantenimiento de equipos</li>
+            <li>Windows, macOS y Linux</li>
+            <li>Redes LAN/WLAN, direccionamiento IP, switches y routers</li>
+            <li>Soporte a usuarios y resolución de incidencias onsite</li>
+            <li>Clonado y migración de datos</li>
+          </ul>
+        </article>
+        <article class="area web">
+          <h3>Desarrollo web y software</h3>
+          <ul>
+            <li>Frontend: HTML5, CSS3, JavaScript, jQuery y React</li>
+            <li>Backend: PHP, Python (Flask) y Google Apps Script</li>
+            <li>Bases de datos: MySQL, PostgreSQL y SQLite</li>
+            <li>C# y Unity: videojuegos y realidad virtual</li>
+            <li>Git y GitHub</li>
+          </ul>
+        </article>
+      </div>
+      <p class="extra">También manejo Photoshop, Lightroom Classic, After Effects y Premiere.</p>
+    </section>
 
-                </div>
+    <section id="experiencia" class="block">
+      <h2>Experiencia</h2>
+      <ol class="line">
+        <li class="sis">
+          <h3>Técnico de campo · Malhus</h3>
+          <p class="when">Diciembre 2025 – Febrero 2026</p>
+          <p>Despliegue de equipamiento informático en sedes judiciales de Cataluña dentro de un proyecto de renovación tecnológica: migración de datos, perfiles de usuario, puestos nuevos, retirada e inventariado de equipos antiguos y resolución de incidencias onsite.</p>
+        </li>
+        <li class="sis">
+          <h3>Técnico informático · CEIP Marta Mata</h3>
+          <p class="when">342 horas</p>
+          <p>Montaje, instalación y mantenimiento preventivo y correctivo de equipos. Configuración de redes locales, incidencias de conectividad, hardware y software, y asistencia a usuarios.</p>
+        </li>
+        <li class="web">
+          <h3>Desarrollador web · esdemarca.com</h3>
+          <p class="when">314 horas</p>
+          <p>Desarrollo en entorno servidor y gestión de bases de datos MySQL y PostgreSQL. Mantenimiento de aplicaciones e interfaces siguiendo un manual de estilo.</p>
+        </li>
+        <li class="web">
+          <h3>Desarrollador VR y software · IvanovichGames</h3>
+          <p class="when">Julio 2019 – Julio 2020 · 387 horas</p>
+          <p>Videojuegos y experiencias de realidad virtual. Integración de hardware y software de terceros, optimización para dispositivos móviles y hardware específico, control de versiones con GitHub y sistemas de feedback.</p>
+        </li>
+      </ol>
+      <p class="key"><span class="dot sis"></span>Sistemas y soporte <span class="dot web"></span>Desarrollo</p>
+    </section>
 
-            </div>
-        </div>
-    </div>
+    <section id="proyectos" class="block">
+      <h2>Proyectos</h2>
+      <h3 class="sub">Aplicaciones propias</h3>
+      <div class="duo">
+        <article class="note">
+          <h4>Fanfic Tracker</h4>
+          <p class="stack">Python · Flask · SQLite · Gmail · Extensión de Chrome</p>
+          <p>Registra y sigue historias de AO3 y FanFiction.net. Lee las notificaciones de Gmail para detectar capítulos nuevos y actualiza el seguimiento solo. Incluye una extensión de Chrome (Manifest V3) para guardar historias desde el navegador.</p>
+        </article>
+        <article class="note">
+          <h4>Pokémon TCG Collection Manager</h4>
+          <p class="stack">Google Apps Script</p>
+          <p>Aplicación web personal para consultar, organizar y actualizar una colección de cartas Pokémon, usando un archivo Excel como base de datos.</p>
+        </article>
+      </div>
 
-    <div id="Pagina_online" class="Contenedor">
-        <!--Paginas Online-->
-        <div class="titulo">
-            <h1>Paginas comerciales</h1>
-        </div>
-        <div class="Galeria">
+      <h3 class="sub">Webs para clientes</h3>
+      <div class="grid">
+        <a class="proj" href="https://ivanovichgames.com/TouringKarts/" target="_blank" rel="noopener">
+          <img src="images/tk.webp" alt="Captura de TouringKarts" loading="lazy">
+          <h4>TouringKarts</h4><p>HTML5, CSS3, jQuery</p>
+        </a>
+        <a class="proj" href="https://ivanovichgames.com/Pangman/" target="_blank" rel="noopener">
+          <img src="images/pang.webp" alt="Captura de Pangman" loading="lazy">
+          <h4>Pangman</h4><p>HTML5, CSS3, jQuery</p>
+        </a>
+      </div>
 
-            <div class="pagina">
-                <div class="container">
+      <h3 class="sub">Webs de prueba</h3>
+      <div class="grid">
+        <a class="proj" href="Games/index.html">
+          <img src="images/ReactGames.png" alt="Captura de ReactGames" loading="lazy">
+          <h4>ReactGames</h4><p>HTML5, CSS3, React</p>
+        </a>
+        <a class="proj" href="HP/index.html">
+          <img src="images/HP.png" alt="Captura de la web de Harry Potter" loading="lazy">
+          <h4>Harry Potter</h4><p>HTML5, CSS3, React, API</p>
+        </a>
+      </div>
+    </section>
 
-                    <a href="https://ivanovichgames.com/TouringKarts/" target="_blank">
-                        <img class="image" src="images/tk.webp">
-                        <div class="overlay">
-                            <h3 class="text_titulo">TouringKarts</h3>
-                            <p class="text">Html5, CSS3, Jquery<br/>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="pagina">
-                <div class="container">
+    <section id="formacion" class="block">
+      <h2>Formación</h2>
+      <ul class="edu">
+        <li><b>2013 – 2015</b> Grado Medio en Sistemas Microinformáticos y Redes</li>
+        <li><b>2015 – 2017</b> Grado Superior en Desarrollo de Aplicaciones Web</li>
+        <li><b>2017 – 2019</b> Grado Superior en Animación 3D, Juegos y Entornos Interactivos</li>
+        <li><b>2017 – 2019</b> HND in Creative Media Production</li>
+      </ul>
+      <p class="extra">Castellano y catalán nativos · Inglés intermedio · Japonés básico · Carnet B y vehículo propio</p>
+    </section>
+  </main>
 
-                    <a href="https://ivanovichgames.com/Pangman/" target="_blank">
-                        <img class="image" src="images/pang.webp">
-                        <div class="overlay">
-                            <h3 class="text_titulo">Pangman</h3>
-                            <p class="text">Html5, CSS3, Jquery<br/>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+  <footer id="contacto" class="block">
+    <h2>Contacto</h2>
+    <p>Estoy en Viladecans (Barcelona). Si buscas a alguien que sepa de equipos y de código, escríbeme.</p>
+    <p><a class="mail" href="mailto:aitor.perez.muro@gmail.com">aitor.perez.muro@gmail.com</a></p>
+    <p class="links">
+      <a href="https://github.com/Acro-52" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/aitor-javier-perez-muro-954a74a5/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="Documentos/AitorJavierPerezMuro_Curriculum.pdf" target="_blank" rel="noopener">CV en PDF</a>
+    </p>
+    <small>Aitor Javier Pérez Muro · <span id="anio">2026</span></small>
+  </footer>
 
-    </div>
-
-    <div id="Pagina_propia" class="Contenedor">
-        <!--Paginas Propias-->
-        <div class="titulo">
-            <h1 style="color: #faf7f7; text-shadow: 0 0 2px #24113c">Paginas propias</h1>
-        </div>
-        <div class="Galeria">
-
-            <div class="pagina">
-                <div class="container">
-
-                    <a href="Games/index.html">
-                        <img class="image" src="images/ReactGames.png">
-                        <div class="overlay_blanco">
-                            <h3 class="text_titulo_negro">ReactGames</h3>
-                            <p class="text_negro">Html5, CSS3, React<br/>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="pagina">
-                <div class="container">
-
-                    <a href="HP/index.html">
-                        <img class="image" src="images/HP.png">
-                        <div class="overlay_blanco">
-                            <h3 class="text_titulo_negro">Harry Potter</h3>
-                            <p class="text_negro">Html5, CSS3, React, API<br/>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--
-
-        <div id="Contacto" class="Contenedor">
-    -->
-    <!--Contacto-->
-    <footer id="Contacto">
-        <div class="footer_1">
-            <p>
-                <a href="tel:609528550">
-                    <span class="material-symbols-outlined"> smartphone </span> 609528550
-                </a>
-            </p>
-            <p>
-                <a href="mailto:aitor.perez.muro@gmail.com">
-                    <span class="material-symbols-outlined"> mail </span> aitor.perez.muro@gmail.com
-                </a>
-            </p>
-        </div>
-        <div class="footer_2">
-            <span>Aitor Javier Perez - Programador web y videojuegos</span>
-            <span>©2022</span>
-        </div>
-    </footer>
+  <script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
 </body>
-<script src="jquery/principal.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script type="text/javascript" src="slider/js/jquery.nivo.slider.js"></script>
-
 </html>
